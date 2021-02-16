@@ -1,0 +1,401 @@
+/*Общие настройки*/
+
+body {
+    margin: 0;
+    margin-right: 250px;
+    font-family: Monotype Corsiva, cursive;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    background-image: url(images/Fon.jpg);
+    background-size: cover;
+
+}
+
+div {
+    margin-bottom: 50px;
+}
+
+h1 {
+    color: #FFBD39;
+    text-align: center;
+    margin-left: 100px;
+    font-weight: 400;
+    font-size: 64px;
+}
+
+h2 {
+    color: #FFBD39;
+    text-align: center;
+    font-size: 40px;
+}
+
+hr {
+    height: 5px;
+    background-color: purple;
+    width: 100%;
+    border-radius: 5px;
+    border: 0;
+}
+
+p {
+    color: purple;
+    text-align: center;
+}
+
+li {
+    color: goldenrod;
+}
+
+/*Общие настройки*/
+
+/*боковая меню навигации*/
+
+#hider {
+    /*кнопка "Навигация" которая прячет менюшку ниже*/
+    color: purple;
+    background-image: url(images/NotScrolled.jpg);
+    background-size: cover;
+    background-size: 110%;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 1;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Monotype Corsiva, cursive;
+    top: 0;
+    outline: none;
+    border: none;
+    width: 15%;
+    height: 4%;
+}
+
+#hider:hover {
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.menu {
+    /*Общий блок менюшки навигации*/
+    color: purple;
+    background-image: url(images/Scroll.png);
+    background-size: 160%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    padding: 5px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50%;
+}
+
+#scrollName {
+    /*Заголовок у менюшки навигации*/
+    margin-top: 30px;
+}
+
+
+.menu a {
+    /*пункты меню*/
+    width: 100%;
+    display: block;
+
+    text-decoration: solid;
+    color: inherit;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.menu a:hover {
+    color: #000;
+}
+
+/*боковая меню*/
+
+/*Блок главного меню с картинкой (header)*/
+
+.main {
+    text-align: center;
+    margin-left: 200px;
+    padding-top: 50px;
+}
+
+#LOEIMG {}
+
+/*Блок главного меню с картинкой (header)*/
+
+
+/*Общие стили для блоков*/
+
+#Gallery,
+#History,
+#Specials,
+#Geography,
+#Famous,
+#Culture {
+    margin-left: 360px;
+    margin-right: 40px;
+    position: relative;
+    padding-bottom: 15px;
+
+}
+
+/*Общие стили для блоков*/
+
+/*Блок История*/
+
+.HistoryH2 {
+    /*Заголовки*/
+    color: purple;
+}
+
+#HistoryList1 {
+    /*Первая страница текста*/
+    position: relative;
+    background-image: url(images/Scroll.png);
+    background-position: center;
+    background-size: 200%;
+    z-index: 1;
+}
+
+#HistoryList2 {
+    /*Вторая страница текста*/
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-image: url(images/Scroll.png);
+    background-position: center;
+    background-size: 200%;
+    z-index: 0;
+    padding-bottom: 40px;
+}
+
+#page1 {
+    /*кнопка перелистывания страницы вперёд*/
+    position: absolute;
+    left: 100px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 30px;
+    color: purple;
+    z-index: 1;
+}
+
+#page2 {
+    /*кнопка перелистывания страницы назад*/
+    position: absolute;
+    background-color: transparent;
+    right: 100px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 30px;
+    color: purple;
+    z-index: 1;
+}
+
+#page1:hover {
+    color: black;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#page2:hover {
+    color: black;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/*Блок История*/
+
+/*Блок Особенностей расы*/
+
+#Specials {
+    /*Общий блок особенностей*/
+    margin-top: 100px;
+    background: rgba(106, 95, 205, 0.2);
+    border-radius: 25px;
+}
+
+#SpecialHr {
+    /*линия после заголовка блока*/
+    position: absolute;
+
+    top: 40px;
+
+
+
+}
+
+.info {
+    /*блоки с пунктами особенностей*/
+    margin-top: -40px;
+}
+
+.negative {
+    /*негативные особенности*/
+    color: sandybrown;
+    list-style: square;
+}
+
+.info li:hover {
+    color: black;
+    cursor: help;
+}
+
+#newHr {
+    /*толстая линия перед объяснениями*/
+    position: absolute;
+    height: 25px;
+    background-color: rebeccapurple;
+    border-radius: 25px;
+    width: 100%;
+    bottom: -25px;
+}
+
+#moreinfo0 {
+    /*Изначальное пустое поле*/
+    border: 3px purple solid;
+    border-radius: 25px;
+    background-color: rgba(106, 95, 205, 0.2);
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    bottom: -200px;
+    color: goldenrod;
+}
+
+/*поля с пояснениями для каждого пункта списка*/
+#moreinfo1,
+#moreinfo2,
+#moreinfo3,
+#moreinfo4,
+#moreinfo5,
+#moreinfo6,
+#moreinfo7,
+#moreinfo8 {
+    display: none;
+    border: 3px purple solid;
+    border-radius: 25px;
+    background-color: rgba(106, 95, 205, 0.2);
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    bottom: -200px;
+    color: goldenrod;
+}
+
+.infotext {
+
+    margin-top: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*Блок Особенностей расы*/
+
+/*Блок географии*/
+#Geography {
+
+    margin-top: 200px;
+}
+
+.dragscroll {
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    cursor: grab;
+}
+
+.dragscroll img {
+    position: relative;
+}
+
+/*Блок географии*/
+
+/*Блок Известных личностей*/
+#textarea {
+    position: relative;
+    background: rgba(106, 95, 205, 0.2);
+    border-radius: 25px;
+}
+
+#textarea p {
+    text-align: left;
+    color: goldenrod;
+    padding-left: 25px;
+
+    width: 100px;
+}
+
+.TextAreaP:hover {
+    cursor: pointer;
+}
+
+#Armong,
+#Mariel,
+#Yarkdrash {
+
+    position: absolute;
+    width: 100%;
+    top: 120px;
+    background: rgba(106, 95, 205, 0.2);
+    border-radius: 25px;
+    display: none;
+
+}
+
+
+#Armong p {
+    text-align: left;
+    color: goldenrod;
+}
+
+/*Блок Известных личностей*/
+
+
+/*Блок Галлереи*/
+
+#Gallery {
+    /*Общий блок галлереи*/
+    margin-top: 150px;
+}
+
+.images img {
+    /*блок с картинками*/
+    width: 47%;
+    height: 275px;
+    border-radius: 10px;
+    margin: 5px;
+    opacity: 0.9;
+    filter: brightness(90%);
+    border: 3px purple solid;
+}
+
+.images img:hover {
+    opacity: 1;
+    cursor: zoom-in;
+    filter: brightness(100%);
+}
+
+#FullScreenImg:hover {
+    cursor: zoom-out;
+}
+
+#FullScreenImg {
+    position: fixed;
+    width: 75%;
+    height: 75%;
+    display: none;
+    top: 80px;
+    right: 120px;
+    z-index: 3;
+}
+
+/*Блок Галлереи*/
